@@ -36,13 +36,13 @@ class Home extends React.Component {
 
           {this.state.show
             ? [
-                <ul key="box" className="box">
+              <ul key="box" className="box">
 
-                  <li key="0"><img src={facebook} alt="sdf" /></li>
-                  <li key="1"><img src={react1} alt="github-icon.svg" /></li>
-                  <li key="2"><img src={github} alt="react-1.svg" /></li>
-                  >
-                </ul>
+                <li key="0"><img src={facebook} alt="sdf" /></li>
+                <li key="1"><img src={react1} alt="github-icon.svg" /></li>
+                <li key="2"><img src={github} alt="react-1.svg" /></li>
+
+              </ul>
               ]
             : null}
         </QueueAnim>
