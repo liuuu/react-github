@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(rgba(11, 11, 11, 0.7), rgba(0, 0, 0, 0.3)), url(./img/sky.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*
+header {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(11, 11, 11, 0.7), rgba(0, 0, 0, 0.3)), url(img/hero.jpg);
+  background-attachment: fixed;
+}*/
