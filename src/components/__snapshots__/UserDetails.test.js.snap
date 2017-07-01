@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<div
+  class="user-detail"
+>
+  <div
+    class="ant-row-flex ant-row-flex-center"
+    style="margin-top:50px;"
+  >
+    <div
+      class="ant-col-10"
+    >
+      <div
+        class="ant-card"
+      >
+        <div
+          class="ant-card-body"
+          style="padding:0;"
+        >
+          <ul
+            class="space-list-item"
+          >
+            <li>
+              <img
+                alt="any"
+                class="avatar"
+                src="any"
+                style="width:70%;"
+              />
+            </li>
+            <li>
+              <p>
+                any
+              </p>
+            </li>
+            <li>
+              any
+            </li>
+            <li>
+              <a
+                href="/all"
+              >
+                back to all
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchField snapshot 1`] = `
+<span
+  className="ant-input-group-wrapper"
+  style={
+    Object {
+      "display": "inline-block",
+      "marginTop": 30,
+      "width": "40%",
+    }
+  }
+>
+  <span
+    className="ant-input-wrapper ant-input-group"
+  >
+    <span
+      className="ant-input-group-addon"
+    >
+      <i
+        className="anticon anticon-search"
+      />
+    </span>
+    <input
+      className="ant-input ant-input-lg"
+      disabled={false}
+      onChange={undefined}
+      onKeyDown={[Function]}
+      placeholder="filter the projects"
+      size="large"
+      style={null}
+      type="text"
+      value=""
+    />
+  </span>
+</span>
+`;

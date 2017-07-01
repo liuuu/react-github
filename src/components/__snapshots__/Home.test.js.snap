@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="home-header"
+  >
+    <h1>
+      This is a Demo site
+    </h1>
+  </div>
+  <div
+    className="democontent"
+  />
+  <div>
+    <button>
+      <a
+        href="all"
+        onClick={[Function]}
+      >
+        browser the Popular Projects of github
+      </a>
+    </button>
+  </div>
+</div>
+`;

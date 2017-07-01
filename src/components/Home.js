@@ -21,7 +21,6 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
-
         <div className="home-header" key="header">
           <h1>This is a Demo site</h1>
         </div>
@@ -48,7 +47,7 @@ class Home extends React.Component {
         </QueueAnim>
         <div key="button">
           <button>
-            <Link to="all">browser the popular Projects of github</Link>
+            <Link to="all">browser the Popular Projects of github</Link>
           </button>
         </div>
 
