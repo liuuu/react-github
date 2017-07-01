@@ -10,7 +10,6 @@ it("should match snapshot Nav", () => {
   const tree = render(
     <MemoryRouter>
       <Nav />
-
     </MemoryRouter>
   );
   expect(toJson(tree)).toMatchSnapshot();
