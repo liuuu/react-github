@@ -8,7 +8,7 @@
 主要是用了Jest做的snapshot测试, 用airbnb的`enzyme`的shallow做的组件测试
 
 ## 关于Container的lifecycle测试
-----
+
 ```js
  componentDidMount() {
     const localData = localStorage.getItem("AllUserData");
