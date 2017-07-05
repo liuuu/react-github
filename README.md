@@ -1,13 +1,13 @@
 # 关于test
-----
+
 当要添加App的test时, 才了解之前写的组件耦合性是多么强, 多么难做unit test
 才了解Dan amrabov关于Container[文章](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)对于test的意义
 
-在这个分支你会看解耦到分为`container`和`components`文件夹, 而`master`里面的混乱.
+在这个分支你会看解耦到分为`container`和`components`文件夹, 而`master`分支里面的混乱.
 
 主要是用了Jest做的snapshot测试, 用airbnb的`enzyme`的shallow做的组件测试
 
-##关于Container的lifecycle测试
+## 关于Container的lifecycle测试
 ----
 ```js
  componentDidMount() {
