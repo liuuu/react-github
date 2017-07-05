@@ -11,7 +11,6 @@
     "rc-queue-anim": "^1.0.5",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-loading": "^0.1.4",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "redux": "^3.7.0"
@@ -28,17 +27,15 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-
   },
   "jest": {
-
-   "coverageThreshold": {
-     "global": {
-       "branches": 0,
-       "functions": 0,
-       "lines": 0,
-       "statements": 0
-     }
-   }
- }
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
+  }
 }

@@ -59,7 +59,6 @@ class AllUser extends React.Component {
 
   componentDidMount() {
     const localData = localStorage.getItem("AllUserData");
-
     if (!localData) {
       Api.fetchPopularRepos().then(data => {
         this.setState({

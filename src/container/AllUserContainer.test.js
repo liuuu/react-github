@@ -1,5 +1,5 @@
 import React from "react";
-import AllUser from "./AllUser";
+import AllUserContainer from "./AllUserContainer";
 import UserCard from "../components/UserCard";
 import renderer from "react-test-renderer";
 import { MemoryRouter } from "react-router-dom";
@@ -10,17 +10,10 @@ import * as Api from "../__mocks__/api";
 // import * as Api from "../api";
 import SearchField from "../components/SearchField";
 
-// it("AllUser shallow snapshot test", () => {
-//   const component = shallow(<AllUser />);
-//   const tree = toJson(component);
-
-//   expect(tree).toMatchSnapshot();
-// });
 // //需要mount个fetch数据的request
 // it("AllUser exclude the life cycle snapshot test", () => {
 //   const component = mount(<AllUser />);
 //   const tree = toJson(component);
-
 //   expect(tree).toMatchSnapshot();
 // });
 //
@@ -64,13 +57,12 @@ jest.mock("../api.js");
 // const  setItem  = spyOn(global.localStorage.setItem);
 
 it("state.isLoading should be true when componentDidMount not invoked", () => {
-  const wrapper = shallow(<AllUser />);
-
+  const wrapper = shallow(<AllUserContainer />);
   expect(wrapper.state("isLoading")).toEqual(true);
 });
 
 it("state.isLoading should be false when componentDidMount invoked ", () => {
-  const wrapper = shallow(<AllUser />, { lifecycleExperimental: true });
+  const wrapper = shallow(<AllUserContainer />, { lifecycleExperimental: true });
   const setItem = spyOn(localStorage, "setItem");
   return Api.fetchPopularRepos().then(() => {
     expect(wrapper.state("isLoading")).toEqual(false);
@@ -81,18 +73,18 @@ it("state.isLoading should be false when componentDidMount invoked ", () => {
 });
 
 it("should update the UI after handleChange is called", () => {
-  const wrapper = shallow(<AllUser />);
+  const wrapper = shallow(<AllUserContainer />);
   wrapper.setState({
     isLoading: false,
     repos: [
-      { id: "jaj", name: "leo" },
-      { id: "sd", name: "nick" },
-      { id: "ssd", name: "andy" }
+      { id: "first", name: "leo" },
+      { id: "second", name: "nick" },
+      { id: "third", name: "andy" }
     ],
     filtered: [
-      { id: "jaj", name: "leo" },
-      { id: "sd", name: "nick" },
-      { id: "ssd", name: "andy" }
+      { id: "first", name: "leo" },
+      { id: "second", name: "nick" },
+      { id: "third", name: "andy" }
     ]
   });
 
@@ -104,7 +96,7 @@ it("should update the UI after handleChange is called", () => {
 
 it("should the dom input invoke the parent handler", () => {
   const handleChange = jest.fn();
-  const wrapper = mount(<MemoryRouter><AllUser /></MemoryRouter>);
+  const wrapper = mount(<MemoryRouter><AllUserContainer /></MemoryRouter>);
   wrapper.find("input").simulate("change", { target: { value: "testing" } });
   expect(wrapper.find("input").node.value).toEqual("testing");
 });

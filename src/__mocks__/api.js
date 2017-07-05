@@ -1,15 +1,12 @@
 export function fetchPopularRepos() {
   return Promise.resolve([
-    { id: "jaj", name: "leo" },
-    { id: "sd", name: "nik" },
-    {
-      id: "ssd",
-      name: "andy"
-    }
+    { id: "first", name: "leo" },
+    { id: "second", name: "nik" },
+    {id: "third",name: "andy"}
   ]);
 }
 
-export function getProfile(any) {
+export function getProfile(name) {
   return Promise.resolve({
     data: { name: "liu" }
   });

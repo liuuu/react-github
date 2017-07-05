@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import AllUser from "./container/AllUser";
+import AllUser from "./container/AllUserContainer";
 import UserDetail from "./container/UserDetailsContainer";
 
 class App extends Component {
