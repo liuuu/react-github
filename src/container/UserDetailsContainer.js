@@ -55,7 +55,7 @@ class UserDetail extends React.Component {
       <div>
         {this.state.detail
           ? <UserDetails detail={this.state.detail} />
-          : <div><Spin /></div>}
+          : <div style={{ marginTop: 150 }}><Spin /></div>}
       </div>
     );
   }
