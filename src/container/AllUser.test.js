@@ -105,7 +105,6 @@ it("should update the UI after handleChange is called", () => {
 it("should the dom input invoke the parent handler", () => {
   const handleChange = jest.fn();
   const wrapper = mount(<MemoryRouter><AllUser /></MemoryRouter>);
-  console.log(wrapper.find(SearchField).props());
   wrapper.find("input").simulate("change", { target: { value: "testing" } });
   expect(wrapper.find("input").node.value).toEqual("testing");
 });

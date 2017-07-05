@@ -23,14 +23,14 @@ type User = {
 };
 
 class UserDetail extends React.Component {
-  state: {};
-  props: {
-    match: {
-      params: {
-        projectId: string
-      }
-    }
-  };
+  // state: {};
+  // props: {
+  //   match: {
+  //     params: {
+  //       projectId: string
+  //     }
+  //   }
+  // };
 
   constructor() {
     super();
@@ -51,7 +51,6 @@ class UserDetail extends React.Component {
   }
 
   render() {
-    console.log(this.state.detail === null);
     return (
       <div>
         {this.state.detail

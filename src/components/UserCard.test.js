@@ -25,16 +25,16 @@ const props = {
   stargazers_count: "string"
 };
 
-it("render UserCard correctly", () => {
-  const component = render(
-    <MemoryRouter>
-      <UserCard {...props} />
-    </MemoryRouter>
-  );
-  expect(toJson(component)).toMatchSnapshot();
-});
-//
+//用了7s
 // it("render UserCard correctly", () => {
-//   const component = render(<UserCard {...props} />);
+//   const component = render(
+//     <MemoryRouter>
+//       <UserCard {...props} />
+//     </MemoryRouter>
+//   );
 //   expect(toJson(component)).toMatchSnapshot();
 // });
+it("render UserCard correctly", () => {
+  const wrapper = shallow(<UserCard />);
+  expect(toJson(wrapper)).toMatchSnapshot();
+});

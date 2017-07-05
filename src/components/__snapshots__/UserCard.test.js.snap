@@ -2,55 +2,57 @@
 
 exports[`render UserCard correctly 1`] = `
 <div
-  class="usercard"
+  className="usercard"
 >
-  <div
-    class="ant-col-8"
-    style="padding:20px;"
+  <Col
+    span={8}
+    style={
+      Object {
+        "padding": "20px",
+      }
+    }
   >
-    <a
-      href="/user/string"
-      style="color:black;"
+    <Link
+      replace={false}
+      style={
+        Object {
+          "color": "black",
+        }
+      }
+      to="/user/testing"
     >
-      <div
-        class="ant-card ant-card-bordered"
-      >
+      <Component>
         <div
-          class="ant-card-body"
+          className="popular-rank"
         >
-          <div
-            class="popular-rank"
-          >
-            #NaN
-          </div>
-          <ul
-            class="space-list-item"
-          >
-            <li>
-              <span
-                alt="string"
-                class="ant-avatar avatar ant-avatar-circle ant-avatar-image"
-              >
-                <img
-                  src="string"
-                />
-              </span>
-            </li>
-            <li>
-              <p>
-                string
-              </p>
-            </li>
-            <li>
-              @string
-            </li>
-            <li>
-              Stars: string
-            </li>
-          </ul>
+          #
+          NaN
         </div>
-      </div>
-    </a>
-  </div>
+        <ul
+          className="space-list-item"
+        >
+          <li>
+            <Avatar
+              alt="testing"
+              className="avatar"
+              prefixCls="ant-avatar"
+              shape="circle"
+              size="default"
+            />
+          </li>
+          <li>
+            <p />
+          </li>
+          <li>
+            @
+            testing
+          </li>
+          <li>
+            Stars: 
+          </li>
+        </ul>
+      </Component>
+    </Link>
+  </Col>
 </div>
 `;

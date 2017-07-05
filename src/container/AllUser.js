@@ -67,7 +67,6 @@ class AllUser extends React.Component {
           repos: data,
           filtered: data
         });
-        console.log("in did", localStorage.setItem);
         localStorage.setItem("AllUserData", JSON.stringify(data));
       });
     } else {
